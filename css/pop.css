@@ -1,0 +1,160 @@
+.pop_containtor {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.pop_containtor .pop_inner {
+  position: relative;
+  font-size: 0.2rem;
+}
+.pop_containtor .pop_inner .pop_title {
+  font-size: 0.5rem;
+  color: #fff;
+  text-align: center;
+}
+.pop_containtor .pop_inner .pop_top {
+  position: relative;
+  background: url(../assets/pop_top_bg.png) no-repeat;
+  background-size: 6.53rem 1rem;
+  width: 6.53rem;
+  height: 1.09rem;
+}
+.pop_containtor .pop_inner .pop_mid {
+  position: relative;
+  background: url(../assets/pop_cir_bg.png) repeat-y;
+  background-size: 6.53rem 6.55rem;
+  width: 6.53rem;
+  margin-top: -5px;
+}
+.pop_containtor .pop_inner .pop_mid .pop_content img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+.pop_containtor .pop_inner .pop_mid .pop_button {
+  background: url(../assets/pop_btn_spr.png) no-repeat;
+  width: 3.81rem;
+  height: 0.89rem;
+  display: block;
+  margin: 0.5rem auto 0;
+  background-size: 3.81rem 9.65rem;
+}
+.pop_containtor .pop_inner .pop_bottom {
+  position: relative;
+  background: url(../assets/pop_bot.png) no-repeat;
+  background-size: 6.53rem 1rem;
+  width: 6.53rem;
+  height: 1.09rem;
+  margin-top: -0.1rem;
+}
+.pop_containtor .pop_inner .pop_close {
+  display: block;
+  position: absolute;
+  font-size: 0.6rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  border: 3px solid #fff;
+  background-color: #000000;
+  width: 0.65rem;
+  height: 0.65rem;
+  line-height: 0.6rem;
+  right: -0.24rem;
+  top: 0.3rem;
+}
+#PopAttend .pop_inner .pop_content {
+  background: url(../assets/b_pop_bg.png) no-repeat;
+  left: 0rem;
+  top: 0rem;
+  background-size: 6.53rem 5.41rem;
+}
+#PopAttend .pop_inner .pop_platform {
+  width: 6.53rem;
+}
+#PopAttend .pop_inner .pop_platform .pop_login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#PopAttend .pop_inner .pop_platform .pop_login .pop_wx,
+#PopAttend .pop_inner .pop_platform .pop_login .pop_qq {
+  width: 1.96rem;
+  height: 2.84rem;
+  margin: 0 0.16rem;
+  position: relative;
+}
+#PopAttend .pop_inner .pop_platform .pop_login .pop_qq {
+  background: url(../assets/pop_login_sel_qq.jpg) no-repeat;
+  background-size: 1.96rem 2.84rem;
+}
+#PopAttend .pop_inner .pop_platform .pop_login .pop_wx {
+  background: url(../assets/pop_login_sel_wx.jpg) no-repeat;
+  background-size: 1.96rem 2.84rem;
+}
+#PopAttend .pop_inner .pop_platform .pop_login .selected::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0rem;
+  top: 0;
+  background: url(../assets/pop_cover.png) no-repeat;
+  background-size: 1.96rem 2.84rem;
+}
+#PopAttend .pop_inner .pop_close {
+  top: 0.78rem;
+}
+#popFAQ .pop_inner .pop_faq {
+  font-size: 0.24rem;
+  width: 85%;
+  height: 7.2rem;
+  margin: 0 auto;
+  overflow-y: scroll;
+  line-height: 0.35rem;
+  font-weight: bold;
+}
+#popFAQ .pop_inner .pop_faq .pop_q {
+  margin-bottom: 0.1rem;
+  color: #896144;
+}
+#popFAQ .pop_inner .pop_faq .pop_ans {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#popFAQ .pop_inner .pop_close {
+  top: 0.28rem;
+}
+#popVideo .pop_inner {
+  width: 7rem;
+  height: 5.4rem;
+  border: 1px solid #fff;
+}
+#popVideo .pop_inner video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  object-fit: contain;
+}
+#popVideo .pop_inner .pop_close {
+  top: -0.4rem;
+}
+#popDetail p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  padding-bottom: 0.6rem;
+}
+#popDetail .pop_close {
+  top: 0.2rem;
+}
